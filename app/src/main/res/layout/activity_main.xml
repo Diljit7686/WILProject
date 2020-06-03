@@ -18,12 +18,12 @@
         android:layout_marginEnd="23dp"
         android:text="E-mail"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/signInEmaiLID"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/signInEmaiLID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="149dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/SignInPasswordID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="149dp"
@@ -49,7 +49,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/signInEmaiLID" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -72,7 +72,7 @@
         android:layout_marginEnd="12dp"
         android:text="Password"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintEnd_toStartOf="@+id/SignInPasswordID"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -101,7 +101,7 @@
         android:layout_marginBottom="82dp"
         android:text="PET SHELTERS"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/signInEmaiLID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -115,16 +115,16 @@
         android:layout_marginTop="55dp"
         android:text="Remember Me ?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/SignInPasswordID" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/rememberMeBtnID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:layout_marginTop="49dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/SignInPasswordID" />
 
     <TextView
         android:id="@+id/textView8"
@@ -135,7 +135,7 @@
         android:text="do not have an account? please"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/rememberMeBtnID" />
 
     <Button
         android:id="@+id/button"
@@ -146,7 +146,7 @@
         android:background="#03A9F4"
         android:text="Sign in"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/rememberMeBtnID" />
 
     <Button
         android:id="@+id/signUpBtnID"
@@ -156,6 +156,6 @@
         android:layout_marginTop="150dp"
         android:text="sign up"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/SignInPasswordID" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
